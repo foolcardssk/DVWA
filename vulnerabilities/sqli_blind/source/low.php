@@ -10,7 +10,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 			// Check database
 			$query  = "SELECT first_name, last_name FROM users WHERE user_id = '$id';";
 			try {
-				$result = mysqli_query($GLOBALS["___mysqli_ston"],  $query ); // Removed 'or die' to suppress mysql errors
+				// $result = mysqli_query($GLOBALS["___mysqli_ston"],  $query ); // Removed 'or die' to suppress mysql errors
 			} catch (Exception $e) {
 				print "There was an error.";
 				exit;
@@ -31,7 +31,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 
 			$query  = "SELECT first_name, last_name FROM users WHERE user_id = '$id';";
 			try {
-				$results = $sqlite_db_connection->query($query);
+				// $results = $sqlite_db_connection->query($query);
 				$row = $results->fetchArray();
 				$exists = $row !== false;
 			} catch(Exception $e) {

@@ -24,7 +24,7 @@ $page[ 'body' ] .= "
 
 <button onclick=\"self.close();\">Close</button>";
 
-dvwaSourceHtmlEcho( $page );
+// dvwaSourceHtmlEcho( $page );
 
 ?>
 

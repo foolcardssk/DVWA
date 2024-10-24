@@ -11,19 +11,19 @@ $page[ 'title' ] = 'Source' . $page[ 'title_separator' ].$page[ 'title' ];
 if (array_key_exists ("id", $_GET)) {
 	$id = $_GET[ 'id' ];
 
-	$lowsrc = @file_get_contents("./{$id}/source/low.php");
+	// $lowsrc = @file_get_contents("./{$id}/source/low.php");
 	$lowsrc = str_replace( array( '$html .=' ), array( 'echo' ), $lowsrc);
 	$lowsrc = highlight_string( $lowsrc, true );
 
-	$medsrc = @file_get_contents("./{$id}/source/medium.php");
+	// $medsrc = @file_get_contents("./{$id}/source/medium.php");
 	$medsrc = str_replace( array( '$html .=' ), array( 'echo' ), $medsrc);
 	$medsrc = highlight_string( $medsrc, true );
 
-	$highsrc = @file_get_contents("./{$id}/source/high.php");
+	// $highsrc = @file_get_contents("./{$id}/source/high.php");
 	$highsrc = str_replace( array( '$html .=' ), array( 'echo' ), $highsrc);
 	$highsrc = highlight_string( $highsrc, true );
 
-	$impsrc = @file_get_contents("./{$id}/source/impossible.php");
+	// $impsrc = @file_get_contents("./{$id}/source/impossible.php");
 	$impsrc = str_replace( array( '$html .=' ), array( 'echo' ), $impsrc);
 	$impsrc = highlight_string( $impsrc, true );
 
@@ -117,6 +117,6 @@ if (array_key_exists ("id", $_GET)) {
 	$page['body'] = "<p>Not found</p>";
 }
 
-dvwaSourceHtmlEcho( $page );
+// dvwaSourceHtmlEcho( $page );
 
 ?>

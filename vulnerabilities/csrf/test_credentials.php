@@ -49,6 +49,6 @@ $page[ 'body' ] .= "
 			</div>
 		</div>\n";
 
-dvwaSourceHtmlEcho( $page );
+// dvwaSourceHtmlEcho( $page );
 
 ?>

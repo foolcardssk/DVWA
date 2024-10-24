@@ -27,7 +27,7 @@ if( isset( $_POST[ 'Submit' ] ) ) {
 			$query  = "SELECT first_name, last_name FROM users WHERE user_id = $id;";
 			#print $query;
 			try {
-				$results = $sqlite_db_connection->query($query);
+				// $results = $sqlite_db_connection->query($query);
 			} catch (Exception $e) {
 				echo 'Caught exception: ' . $e->getMessage();
 				exit();

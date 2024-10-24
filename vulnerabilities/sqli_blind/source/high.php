@@ -10,7 +10,7 @@ if( isset( $_COOKIE[ 'id' ] ) ) {
 			// Check database
 			$query  = "SELECT first_name, last_name FROM users WHERE user_id = '$id' LIMIT 1;";
 			try {
-				$result = mysqli_query($GLOBALS["___mysqli_ston"],  $query ); // Removed 'or die' to suppress mysql errors
+				// $result = mysqli_query($GLOBALS["___mysqli_ston"],  $query ); // Removed 'or die' to suppress mysql errors
 			} catch (Exception $e) {
 				$result = false;
 			}
@@ -32,7 +32,7 @@ if( isset( $_COOKIE[ 'id' ] ) ) {
 
 			$query  = "SELECT first_name, last_name FROM users WHERE user_id = '$id' LIMIT 1;";
 			try {
-				$results = $sqlite_db_connection->query($query);
+				// $results = $sqlite_db_connection->query($query);
 				$row = $results->fetchArray();
 				$exists = $row !== false;
 			} catch(Exception $e) {
