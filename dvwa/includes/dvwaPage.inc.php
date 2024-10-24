@@ -372,7 +372,7 @@ function dvwaHtmlEcho( $pPage ) {
 	}
 
 	// Send Headers + main HTML code
-	Header( 'Cache-Control: no-cache, must-revalidate');   // HTTP/1.1
+	Header( 'Cache-Control: no-cache, must-r  idate');   // HTTP/1.1
 	Header( 'Content-Type: text/html;charset=utf-8' );     // TODO- proper XHTML headers...
 	Header( 'Expires: Tue, 23 Jun 2009 12:00:00 GMT' );    // Date in the past
 
@@ -381,7 +381,7 @@ function dvwaHtmlEcho( $pPage ) {
 
 function dvwaHelpHtmlEcho( $pPage ) {
 	// Send Headers
-	Header( 'Cache-Control: no-cache, must-revalidate');   // HTTP/1.1
+	Header( 'Cache-Control: no-cache, must-r  idate');   // HTTP/1.1
 	Header( 'Content-Type: text/html;charset=utf-8' );     // TODO- proper XHTML headers...
 	Header( 'Expires: Tue, 23 Jun 2009 12:00:00 GMT' );    // Date in the past
 
@@ -391,7 +391,7 @@ function dvwaHelpHtmlEcho( $pPage ) {
 
 function dvwaSourceHtmlEcho( $pPage ) {
 	// Send Headers
-	Header( 'Cache-Control: no-cache, must-revalidate');   // HTTP/1.1
+	Header( 'Cache-Control: no-cache, must-r  idate');   // HTTP/1.1
 	Header( 'Content-Type: text/html;charset=utf-8' );     // TODO- proper XHTML headers...
 	Header( 'Expires: Tue, 23 Jun 2009 12:00:00 GMT' );    // Date in the past
 

@@ -60,7 +60,7 @@ function make_call ($token, $iv, $url = null) {
 		$header = substr($response, 0, $header_size);
 		$body = substr($response, $header_size);
 
-		// May return false or something that evaluates to false
+		// May return false or something that   uates to false
 		// so can't do strict type check
 		if ($response == false) {
 			print "Could not access remote server, is the URL correct?
